@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIYAN TRAVEL - Nyaman Sampai Tujuan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36CFC9',
+                        dark: '#1E293B',
+                        light: '#F5F7FA',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .scroll-smooth {
+                scroll-behavior: smooth;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-dark bg-light scroll-smooth">
+    <!-- Navigasi -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <h1 class="text-[clamp(1.2rem,3vw,1.5rem)] font-bold text-primary">✨ ZIYAN TRAVEL</h1>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="#beranda" class="font-medium hover:text-primary transition-colors">Beranda</a>
+                <a href="#layanan" class="font-medium hover:text-primary transition-colors">Layanan</a>
+                <a href="#rute" class="font-medium hover:text-primary transition-colors">Rute</a>
+                <a href="#jadwal" class="font-medium hover:text-primary transition-colors">Jadwal</a>
+                <a href="#kontak" class="font-medium hover:text-primary transition-colors">Kontak</a>
+            </div>
+            <a href="wa.me/6282331717517" target="_blank" class="bg-secondary hover:bg-secondary/90 text-white px-4 py-2 rounded-lg font-medium transition-all flex items-center gap-2">
+                <i class="fa fa-whatsapp"></i>
+                <span class="hidden sm:inline">Hubungi Kami</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Bagian Utama / Beranda -->
+    <section id="beranda" class="min-h-screen flex items-center bg-gradient-to-br from-primary/5 to-secondary/5 pt-16">
+        <div class="container mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+            <div class="order-2 md:order-1">
+                <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-primary leading-tight text-shadow">
+                    Nyaman Sampai Tujuan!
+                </h2>
+                <p class="text-lg md:text-xl text-gray-700 mt-4 mb-8">
+                    Nikmati layanan perjalanan terpercaya dengan rute harian yang menghubungkan kota-kota strategis di Jawa Timur. Aman, nyaman, dan selalu tepat waktu.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="wa.me/6282331717517" target="_blank" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        Pesan Sekarang
+                    </a>
+                    <a href="#layanan" class="bg-white hover:bg-gray-50 text-dark border border-gray-200 px-6 py-3 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg">
+                        Lihat Layanan
+                    </a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 relative">
+                <div class="w-full h-[300px] md:h-[400px] bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center">
+                    <i class="fa fa-car text-[10rem] text-primary/30"></i>
+                </div>
+                <div class="absolute -bottom-5 -left-5 bg-white p-4 rounded-lg shadow-lg">
+                    <p class="font-bold text-primary">100% Terpercaya</p>
+                    <p class="text-sm text-gray-600">Ribuan penumpang puas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Rute -->
+    <section id="rute" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-dark">Rute Perjalanan Harian</h2>
+                <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Melayani perjalanan dengan rute tetap setiap hari, melewati kota-kota utama berikut ini:</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center items-center gap-3 md:gap-4">
+                <span class="bg-primary text-white px-4 py-2 rounded-full font-semibold">Ponorogo</span>
+                <i class="fa fa-arrow-right text-gray-400"></i>
+                <span class="bg-primary text-white px-4 py-2 rounded-full font-semibold">Madiun</span>
+                <i class="fa fa-arrow-right text-gray-400"></i>
+                <span class="bg-primary text-white px-4 py-2 rounded-full font-semibold">Nganjuk</span>
+                <i class="fa fa-arrow-right text-gray-400"></i>
+                <span class="bg-primary text-white px-4 py-2 rounded-full font-semibold">Mojokerto</span>
+                <i class="fa fa-arrow-right text-gray-400"></i>
+                <span class="bg-primary text-white px-4 py-2 rounded-full font-semibold">Surabaya</span>
+                <i class="fa fa-arrow-right text-gray-400"></i>
+                <span class="bg-secondary text-white px-4 py-2 rounded-full font-semibold">Bandara Juanda</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Layanan -->
+    <section id="layanan" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-dark">Layanan Kami</h2>
+                <p class="text-gray-600 mt-2">Berbagai pilihan layanan sesuai kebutuhan perjalanan Anda</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Layanan 1 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow p-6 border-t-4 border-primary">
+                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa fa-bus text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Travel Reguler Harian</h3>
+                    <p class="text-gray-600">Perjalanan rutin yang nyaman dan terpercaya dengan jadwal tetap setiap hari.</p>
+                </div>
+
+                <!-- Layanan 2 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow p-6 border-t-4 border-primary">
+                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa fa-car text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Carter / Drop-off Tujuan</h3>
+                    <p class="text-gray-600">Layanan pribadi untuk kebutuhan perjalanan spesifik Anda ke lokasi mana pun.</p>
+                </div>
+
+                <!-- Layanan 3 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow p-6 border-t-4 border-primary">
+                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa fa-map-signs text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Paket Wisata</h3>
+                    <p class="text-gray-600">Jelajahi destinasi impian dengan paket wisata menarik dan harga bersahabat.</p>
+                </div>
+
+                <!-- Layanan 4 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow p-6 border-t-4 border-secondary">
+                    <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa fa-plane text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Shuttle Bandara Juanda</h3>
+                    <p class="text-gray-600">Antar jemput bandara yang efisien, cepat, dan selalu tepat waktu.</p>
+                </div>
+
+                <!-- Layanan 5 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow p-6 border-t-4 border-secondary">
+                    <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa fa-box text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Kiriman Paket</h3>
+                    <p class="text-gray-600">Kirim dokumen atau barang Anda dengan layanan cepat, aman, dan terjamin.</p>
+                </div>
+
+                <!-- Layanan 6 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow p-6 border-t-4 border-secondary">
+                    <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa fa-ticket text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Pemesanan Tiket</h3>
+                    <p class="text-gray-600">Melayani pemesanan tiket pesawat dan tiket kapal laut dengan mudah dan cepat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Jadwal -->
+    <section id="jadwal" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-dark">Jadwal Keberangkatan</h2>
+                <p class="text-gray-600 mt-2">Beroperasi setiap hari dengan jadwal tetap agar Anda bisa merencanakan perjalanan dengan baik</p>
+            </div>
+
+            <div class="max-w-lg mx-auto bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-8 shadow-lg">
+                <div class="flex justify-between items-center py-4 border-b border-gray-200">
+                    <div class="flex items-center gap-3">
+                        <i class="fa fa-sun-o text-2xl text-amber-500"></i>
+                        <span class="font-semibold text-lg">Pagi</span>
+                    </div>
+                    <span class="font-bold text-xl">07.00 WIB</span>
+                </div>
+
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fa fa-moon-o text-2xl text-indigo-700"></i>
+                        <span class="font-semibold text-lg">Malam</span>
+                    </div>
+                    <span class="font-bold text-xl">21.00 WIB</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="kontak" class="py-16 bg-gradient-to-br from-primary/10 to-secondary/10">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-dark">Hubungi Kami</h2>
+                <p class="text-gray-600 mt-2">Pesan tempat atau tanya informasi lebih lanjut melalui kontak di bawah ini</p>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-8 md:p-10">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <a href="wa.me/6282331717517" target="_blank" class="flex items-center gap-4 p-4 bg-green-50 hover:bg-green-100 rounded-xl transition-colors">
+                            <i class="fa fa-whatsapp text-3xl text-green-600"></i>
+                            <div>
+                                <p class="text-sm text-gray-600">WhatsApp / Telepon</p>
+                                <p class="font-bold text-lg">0823-3171-7517</p>
+                            </div>
+                        </a>
+
+                        <div class="pt-4">
+                            <h3 class="font-bold text-lg mb-3">Media Sosial Kami:</h3>
+                            <div class="flex flex-col gap-3">
+                                <a href="#" class="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors">
+                                    <i class="fa fa-facebook-square text-xl"></i>
+                                    <span>ZIYAN TRAVEL Madiun</span>
+                                </a>
+                                <a href="#" class="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors">
+                                    <i class="fa fa-instagram text-xl"></i>
+                                    <span>@ziyanoffisial01</span>
+                                </a>
+                                <a href="#" class="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors">
+                                    <i class="fa fa-tiktok text-xl"></i>
+                                    <span>@ziyantravelmadiun</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-primary/5 p-5 rounded-xl flex flex-col justify-center">
+                        <h3 class="font-bold text-lg text-center mb-3">Mengapa Memilih Kami?</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-primary"></i> Armada bersih dan terawat</li>
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-primary"></i> Pengemudi berpengalaman</li>
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-primary"></i> Harga kompetitif</li>
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-primary"></i> Melayani 24 jam</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-xl font-bold mb-2">✨ ZIYAN TRAVEL</h2>
+            <p class="text-gray-400 mb-4">Solusi terbaik untuk setiap perjalananmu! Aman, nyaman, dan selalu tepat waktu.</p>
+            <p class="text-sm text-gray-500">© 2026 Ziyan Travel. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
